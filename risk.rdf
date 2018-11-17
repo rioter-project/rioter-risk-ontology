@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:rioter="http://w3id.org/rioter#"
     xmlns:risk="http://w3id.org/rioter/risk#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,9 +13,20 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://w3id.org/rioter/risk">
   <owl:Ontology rdf:about="">
-    <spin:imports rdf:resource="http://topbraid.org/spin/owlrl-all"/>
+    <dc:creator>Aitor Corchero (Eurecat Technology Centre)</dc:creator>
+    <dcterms:modified>16/11/2018</dcterms:modified>
     <spin:imports rdf:resource="http://topbraid.org/spin/spinowl"/>
+    <dc:contributor>George Karavokiros (NTUA)</dc:contributor>
+    <dc:title>Cyber-Physic Risk Management Ontology in Critical Infrastructures</dc:title>
+    <dc:contributor>Achim Mälzer (IWW)</dc:contributor>
+    <dc:contributor>Fabian Vollmer (IWW)</dc:contributor>
+    <dc:description>Rioter Extension focused on managing risks in critical infrastructures</dc:description>
+    <dc:contributor>Enric Bonet (CETAQUA)</dc:contributor>
     <owl:versionInfo>Created with TopBraid Composer</owl:versionInfo>
+    <dc:source>risk</dc:source>
+    <dcterms:license>https://opensource.org/licenses/MIT</dcterms:license>
+    <dcterms:created>01/07/2018</dcterms:created>
+    <spin:imports rdf:resource="http://topbraid.org/spin/owlrl-all"/>
   </owl:Ontology>
   <owl:Class rdf:ID="PhysicalRisk">
     <rdfs:subClassOf>
@@ -233,10 +246,17 @@
   <owl:DatatypeProperty rdf:about="http://w3id.org/rioter#name">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
   <risk:Action rdf:ID="Reactive">
     <rioter:description>Action produced once the threat has been materialised</rioter:description>
     <rioter:name>Reactive Action</rioter:name>
   </risk:Action>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
   <risk:Action rdf:ID="Proactive">
     <rioter:description>Action derived from some scheduled action.</rioter:description>
     <rioter:name>Proactive</rioter:name>
@@ -245,6 +265,7 @@
     <rioter:description>Action derived from the computation of some system</rioter:description>
     <rioter:name>Predictive Action</rioter:name>
   </risk:Action>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
 </rdf:RDF>
 
 <!-- Created with TopBraid -->
