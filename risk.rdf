@@ -18,12 +18,13 @@
     <spin:imports rdf:resource="http://topbraid.org/spin/spinowl"/>
     <dc:contributor>George Karavokiros (NTUA)</dc:contributor>
     <dc:title>Cyber-Physic Risk Management Ontology in Critical Infrastructures</dc:title>
+    <owl:versionInfo>1.0</owl:versionInfo>
     <dc:contributor>Achim Mälzer (IWW)</dc:contributor>
     <dc:contributor>Fabian Vollmer (IWW)</dc:contributor>
     <dc:description>Rioter Extension focused on managing risks in critical infrastructures</dc:description>
     <dc:contributor>Enric Bonet (CETAQUA)</dc:contributor>
-    <owl:versionInfo>Created with TopBraid Composer</owl:versionInfo>
     <dc:source>risk</dc:source>
+    <owl:versionIRI rdf:resource=""/>
     <dcterms:license>https://opensource.org/licenses/MIT</dcterms:license>
     <dcterms:created>01/07/2018</dcterms:created>
     <spin:imports rdf:resource="http://topbraid.org/spin/owlrl-all"/>

@@ -1,0 +1,466 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/rioter#Asset"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/rioter/risk#associatedRisk"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/rioter/risk#risk"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/rioter#Asset"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Consequence"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://w3id.org/rioter/risk#consequenceDimension"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://w3id.org/rioter#Asset"
+    }, {
+      "@id" : "_:genid11"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/rioter#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#Asset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#CriticalInfrastructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#Infrastructure"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#System"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#Indicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/saref#Measurement"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#Infrastructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#PhysicalSphere"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#NaturalArtifact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#SampledFeature"
+  }, {
+    "@id" : "http://w3id.org/rioter/risk#PhysicalSphere"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#PhysicalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#Asset"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#SampledFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#DigitalSphere"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter#domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://w3id.org/rioter#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Achim Mälzer (IWW)"
+  }, {
+    "@value" : "Enric Bonet (CETAQUA)"
+  }, {
+    "@value" : "Fabian Vollmer (IWW)"
+  }, {
+    "@value" : "George Karavokiros (NTUA)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Aitor Corchero (Eurecat Technology Centre)"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Rioter Extension focused on managing risks in critical infrastructures"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@value" : "risk"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Cyber-Physic Risk Management Ontology in Critical Infrastructures"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "01/07/2018"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "16/11/2018"
+  } ],
+  "http://spinrdf.org/spin#imports" : [ {
+    "@id" : "http://topbraid.org/spin/owlrl-all"
+  }, {
+    "@id" : "http://topbraid.org/spin/spinowl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://w3id.org/rioter/risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#Action"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Anomaly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Consequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#CyberRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#DigitalSphere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#Event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Human",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#PhysicalSphere"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#LoAH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#LoAS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#LoC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Mitigation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#NaturalEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#NaturalArtifact"
+  }, {
+    "@id" : "http://w3id.org/rioter/risk#Event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#PhysicalRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#PhysicalSphere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Predictive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/rioter/risk#Action" ],
+  "http://w3id.org/rioter#description" : [ {
+    "@value" : "Action derived from the computation of some system"
+  } ],
+  "http://w3id.org/rioter#name" : [ {
+    "@value" : "Predictive Action"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Proactive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/rioter/risk#Action" ],
+  "http://w3id.org/rioter#description" : [ {
+    "@value" : "Action derived from some scheduled action."
+  } ],
+  "http://w3id.org/rioter#name" : [ {
+    "@value" : "Proactive"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Reactive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/rioter/risk#Action" ],
+  "http://w3id.org/rioter#description" : [ {
+    "@value" : "Action produced once the threat has been materialised"
+  } ],
+  "http://w3id.org/rioter#name" : [ {
+    "@value" : "Reactive Action"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#DigitalSphere"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Threat"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Threat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#Vulnerability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#affects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#associatedRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#consequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Consequence"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#consequenceDimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Mitigation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Consequence"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/rioter#Asset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#mitigationAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Mitigation"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#monitoredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter#Device"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#objective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter#Indicator"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Risk"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Source"
+  } ]
+}, {
+  "@id" : "http://w3id.org/rioter/risk#vulnerability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/rioter#Asset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter/risk#Vulnerability"
+  } ]
+}, {
+  "@id" : "http://w3id.org/saref#Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+} ]

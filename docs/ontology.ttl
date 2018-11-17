@@ -1,0 +1,367 @@
+@prefix : <http://w3id.org/rioter/risk#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/rioter/risk> .
+
+<http://w3id.org/rioter/risk> rdf:type owl:Ontology ;
+                               owl:versionIRI <http://w3id.org/rioter/risk> ;
+                               <http://purl.org/dc/elements/1.1/contributor> "Achim Mälzer (IWW)" ,
+                                                                             "Enric Bonet (CETAQUA)" ,
+                                                                             "Fabian Vollmer (IWW)" ,
+                                                                             "George Karavokiros (NTUA)" ;
+                               <http://purl.org/dc/elements/1.1/creator> "Aitor Corchero (Eurecat Technology Centre)" ;
+                               <http://purl.org/dc/elements/1.1/description> "Rioter Extension focused on managing risks in critical infrastructures" ;
+                               <http://purl.org/dc/elements/1.1/source> "risk" ;
+                               <http://purl.org/dc/elements/1.1/title> "Cyber-Physic Risk Management Ontology in Critical Infrastructures" ;
+                               <http://purl.org/dc/terms/created> "01/07/2018" ;
+                               <http://purl.org/dc/terms/license> "https://opensource.org/licenses/MIT" ;
+                               <http://purl.org/dc/terms/modified> "16/11/2018" ;
+                               <http://spinrdf.org/spin#imports> <http://topbraid.org/spin/owlrl-all> ,
+                                                                 <http://topbraid.org/spin/spinowl> ;
+                               owl:versionInfo "1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/rioter#domain
+<http://w3id.org/rioter#domain> rdf:type owl:ObjectProperty .
+
+
+###  http://w3id.org/rioter/risk#affects
+:affects rdf:type owl:ObjectProperty ;
+         rdfs:domain :Risk ;
+         rdfs:range :Risk .
+
+
+###  http://w3id.org/rioter/risk#associatedRisk
+:associatedRisk rdf:type owl:ObjectProperty ;
+                rdfs:domain :Source ;
+                rdfs:range :Risk .
+
+
+###  http://w3id.org/rioter/risk#consequence
+:consequence rdf:type owl:ObjectProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range :Consequence .
+
+
+###  http://w3id.org/rioter/risk#consequenceDimension
+:consequenceDimension rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Mitigation ;
+                      rdfs:range :Consequence .
+
+
+###  http://w3id.org/rioter/risk#event
+:event rdf:type owl:ObjectProperty ;
+       rdfs:domain <http://w3id.org/rioter#Asset> ;
+       rdfs:range :Event .
+
+
+###  http://w3id.org/rioter/risk#mitigationAction
+:mitigationAction rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Risk ;
+                  rdfs:range :Mitigation .
+
+
+###  http://w3id.org/rioter/risk#monitoredBy
+:monitoredBy rdf:type owl:ObjectProperty ;
+             rdfs:range <http://w3id.org/rioter#Device> .
+
+
+###  http://w3id.org/rioter/risk#objective
+:objective rdf:type owl:ObjectProperty ;
+           rdfs:domain :Risk ;
+           rdfs:range <http://w3id.org/rioter#Indicator> .
+
+
+###  http://w3id.org/rioter/risk#risk
+:risk rdf:type owl:ObjectProperty ;
+      rdfs:range :Risk .
+
+
+###  http://w3id.org/rioter/risk#source
+:source rdf:type owl:ObjectProperty ;
+        rdfs:range :Source .
+
+
+###  http://w3id.org/rioter/risk#vulnerability
+:vulnerability rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://w3id.org/rioter#Asset> ;
+               rdfs:range :Vulnerability .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/rioter#description
+<http://w3id.org/rioter#description> rdf:type owl:DatatypeProperty ;
+                                     rdfs:range xsd:string .
+
+
+###  http://w3id.org/rioter#name
+<http://w3id.org/rioter#name> rdf:type owl:DatatypeProperty ;
+                              rdfs:range xsd:string .
+
+
+###  http://w3id.org/rioter/risk#LoAH
+:LoAH rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:integer .
+
+
+###  http://w3id.org/rioter/risk#LoAS
+:LoAS rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:integer .
+
+
+###  http://w3id.org/rioter/risk#LoC
+:LoC rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:integer .
+
+
+###  http://w3id.org/rioter/risk#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/rioter#Action
+<http://w3id.org/rioter#Action> rdf:type owl:Class ;
+                                rdfs:subClassOf owl:Thing .
+
+
+###  http://w3id.org/rioter#Asset
+<http://w3id.org/rioter#Asset> rdf:type owl:Class ;
+                               rdfs:subClassOf owl:Thing ,
+                                               [ owl:intersectionOf ( <http://w3id.org/rioter#Asset>
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :risk ;
+                                                                        owl:allValuesFrom :Risk
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  http://w3id.org/rioter#CriticalInfrastructure
+<http://w3id.org/rioter#CriticalInfrastructure> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://w3id.org/rioter#Infrastructure> .
+
+
+###  http://w3id.org/rioter#Device
+<http://w3id.org/rioter#Device> rdf:type owl:Class ;
+                                rdfs:subClassOf <http://w3id.org/rioter#System> .
+
+
+###  http://w3id.org/rioter#Event
+<http://w3id.org/rioter#Event> rdf:type owl:Class ;
+                               rdfs:subClassOf owl:Thing .
+
+
+###  http://w3id.org/rioter#Indicator
+<http://w3id.org/rioter#Indicator> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://w3id.org/saref#Measurement> .
+
+
+###  http://w3id.org/rioter#Infrastructure
+<http://w3id.org/rioter#Infrastructure> rdf:type owl:Class ;
+                                        rdfs:subClassOf :PhysicalSphere .
+
+
+###  http://w3id.org/rioter#NaturalArtifact
+<http://w3id.org/rioter#NaturalArtifact> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://w3id.org/rioter#SampledFeature> ,
+                                                         :PhysicalSphere .
+
+
+###  http://w3id.org/rioter#PhysicalObject
+<http://w3id.org/rioter#PhysicalObject> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://w3id.org/rioter#Asset> .
+
+
+###  http://w3id.org/rioter#SampledFeature
+<http://w3id.org/rioter#SampledFeature> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://w3id.org/rioter#PhysicalObject> .
+
+
+###  http://w3id.org/rioter#System
+<http://w3id.org/rioter#System> rdf:type owl:Class ;
+                                rdfs:subClassOf :DigitalSphere .
+
+
+###  http://w3id.org/rioter/risk#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf <http://w3id.org/rioter#Action> .
+
+
+###  http://w3id.org/rioter/risk#Anomaly
+:Anomaly rdf:type owl:Class ;
+         rdfs:subClassOf :Event .
+
+
+###  http://w3id.org/rioter/risk#Consequence
+:Consequence rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing .
+
+
+###  http://w3id.org/rioter/risk#CyberRisk
+:CyberRisk rdf:type owl:Class ;
+           rdfs:subClassOf :Risk .
+
+
+###  http://w3id.org/rioter/risk#DigitalSphere
+:DigitalSphere rdf:type owl:Class ;
+               rdfs:subClassOf <http://w3id.org/rioter#PhysicalObject> .
+
+
+###  http://w3id.org/rioter/risk#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf <http://w3id.org/rioter#Event> .
+
+
+###  http://w3id.org/rioter/risk#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :PhysicalSphere .
+
+
+###  http://w3id.org/rioter/risk#Mitigation
+:Mitigation rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing ,
+                            [ owl:intersectionOf ( <http://w3id.org/rioter#Asset>
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :consequenceDimension ;
+                                                     owl:allValuesFrom :Consequence
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] .
+
+
+###  http://w3id.org/rioter/risk#NaturalEvent
+:NaturalEvent rdf:type owl:Class ;
+              rdfs:subClassOf <http://w3id.org/rioter#NaturalArtifact> ,
+                              :Event .
+
+
+###  http://w3id.org/rioter/risk#PhysicalRisk
+:PhysicalRisk rdf:type owl:Class ;
+              rdfs:subClassOf :Risk .
+
+
+###  http://w3id.org/rioter/risk#PhysicalSphere
+:PhysicalSphere rdf:type owl:Class ;
+                rdfs:subClassOf <http://w3id.org/rioter#PhysicalObject> .
+
+
+###  http://w3id.org/rioter/risk#Problem
+:Problem rdf:type owl:Class ;
+         rdfs:subClassOf :Event .
+
+
+###  http://w3id.org/rioter/risk#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:subClassOf :Event .
+
+
+###  http://w3id.org/rioter/risk#Software
+:Software rdf:type owl:Class ;
+          rdfs:subClassOf :DigitalSphere .
+
+
+###  http://w3id.org/rioter/risk#Source
+:Source rdf:type owl:Class ;
+        rdfs:subClassOf :Threat ,
+                        [ owl:intersectionOf ( <http://w3id.org/rioter#Asset>
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :associatedRisk ;
+                                                 owl:allValuesFrom :Risk
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] .
+
+
+###  http://w3id.org/rioter/risk#Threat
+:Threat rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing .
+
+
+###  http://w3id.org/rioter/risk#Vulnerability
+:Vulnerability rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing .
+
+
+###  http://w3id.org/saref#Measurement
+<http://w3id.org/saref#Measurement> rdf:type owl:Class ;
+                                    rdfs:subClassOf owl:Thing .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/rioter/risk#Predictive
+:Predictive rdf:type owl:NamedIndividual ,
+                     :Action ;
+            <http://w3id.org/rioter#description> "Action derived from the computation of some system" ;
+            <http://w3id.org/rioter#name> "Predictive Action" .
+
+
+###  http://w3id.org/rioter/risk#Proactive
+:Proactive rdf:type owl:NamedIndividual ,
+                    :Action ;
+           <http://w3id.org/rioter#description> "Action derived from some scheduled action." ;
+           <http://w3id.org/rioter#name> "Proactive" .
+
+
+###  http://w3id.org/rioter/risk#Reactive
+:Reactive rdf:type owl:NamedIndividual ,
+                   :Action ;
+          <http://w3id.org/rioter#description> "Action produced once the threat has been materialised" ;
+          <http://w3id.org/rioter#name> "Reactive Action" .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

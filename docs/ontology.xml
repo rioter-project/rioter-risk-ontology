@@ -1,0 +1,649 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/rioter/risk#"
+     xml:base="http://w3id.org/rioter/risk"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:spin="http://spinrdf.org/spin#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:rioter="http://w3id.org/rioter#">
+    <owl:Ontology rdf:about="http://w3id.org/rioter/risk">
+        <owl:versionIRI rdf:resource="http://w3id.org/rioter/risk"/>
+        <dc:contributor>Achim Mälzer (IWW)</dc:contributor>
+        <dc:contributor>Enric Bonet (CETAQUA)</dc:contributor>
+        <dc:contributor>Fabian Vollmer (IWW)</dc:contributor>
+        <dc:contributor>George Karavokiros (NTUA)</dc:contributor>
+        <dc:creator>Aitor Corchero (Eurecat Technology Centre)</dc:creator>
+        <dc:description>Rioter Extension focused on managing risks in critical infrastructures</dc:description>
+        <dc:source>risk</dc:source>
+        <dc:title>Cyber-Physic Risk Management Ontology in Critical Infrastructures</dc:title>
+        <terms:created>01/07/2018</terms:created>
+        <terms:license>https://opensource.org/licenses/MIT</terms:license>
+        <terms:modified>16/11/2018</terms:modified>
+        <spin:imports rdf:resource="http://topbraid.org/spin/owlrl-all"/>
+        <spin:imports rdf:resource="http://topbraid.org/spin/spinowl"/>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/rioter#domain -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter#domain"/>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#affects -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#affects">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#associatedRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#associatedRisk">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/risk#Source"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#consequence -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#consequence">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Consequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#consequenceDimension -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#consequenceDimension">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/risk#Mitigation"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Consequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#event -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#event">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter#Asset"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#mitigationAction -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#mitigationAction">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Mitigation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#monitoredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#monitoredBy">
+        <rdfs:range rdf:resource="http://w3id.org/rioter#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#objective -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#objective">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter#Indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#risk -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#risk">
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#source -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#source">
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#vulnerability -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/risk#vulnerability">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter#Asset"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/risk#Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/rioter#description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rioter#description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/rioter#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rioter#name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#LoAH -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rioter/risk#LoAH">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#LoAS -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rioter/risk#LoAS">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#LoC -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rioter/risk#LoC">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rioter/risk#identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/rioter#Action -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Action">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Asset -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Asset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/rioter#Asset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://w3id.org/rioter/risk#risk"/>
+                        <owl:allValuesFrom rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#CriticalInfrastructure -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#CriticalInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Device -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Device">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Event -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Event">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Indicator -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Indicator">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/saref#Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Infrastructure -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#PhysicalSphere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#NaturalArtifact -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#NaturalArtifact">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#SampledFeature"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#PhysicalSphere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#PhysicalObject -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#SampledFeature -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#SampledFeature">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#System -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#System">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#DigitalSphere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Action -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Action">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Anomaly -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Anomaly">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Consequence -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Consequence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#CyberRisk -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#CyberRisk">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#DigitalSphere -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#DigitalSphere">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Event -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Event">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Human -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Human">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#PhysicalSphere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Mitigation -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Mitigation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/rioter#Asset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://w3id.org/rioter/risk#consequenceDimension"/>
+                        <owl:allValuesFrom rdf:resource="http://w3id.org/rioter/risk#Consequence"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#NaturalEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#NaturalEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#NaturalArtifact"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#PhysicalRisk -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#PhysicalRisk">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#PhysicalSphere -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#PhysicalSphere">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Problem -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Problem">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Risk -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Risk">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Software -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Software">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#DigitalSphere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Source -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Source">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/risk#Threat"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/rioter#Asset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://w3id.org/rioter/risk#associatedRisk"/>
+                        <owl:allValuesFrom rdf:resource="http://w3id.org/rioter/risk#Risk"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Threat -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Threat">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Vulnerability -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/risk#Vulnerability">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/saref#Measurement -->
+
+
+    <owl:Class rdf:about="http://w3id.org/saref#Measurement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Predictive -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rioter/risk#Predictive">
+        <rdf:type rdf:resource="http://w3id.org/rioter/risk#Action"/>
+        <rioter:description>Action derived from the computation of some system</rioter:description>
+        <rioter:name>Predictive Action</rioter:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Proactive -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rioter/risk#Proactive">
+        <rdf:type rdf:resource="http://w3id.org/rioter/risk#Action"/>
+        <rioter:description>Action derived from some scheduled action.</rioter:description>
+        <rioter:name>Proactive</rioter:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rioter/risk#Reactive -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rioter/risk#Reactive">
+        <rdf:type rdf:resource="http://w3id.org/rioter/risk#Action"/>
+        <rioter:description>Action produced once the threat has been materialised</rioter:description>
+        <rioter:name>Reactive Action</rioter:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1011 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/rioter/risk", "http://w3id.org/rioter", "http://w3id.org/saref" ],
+    "title" : {
+      "undefined" : "Cyber-Physic Risk Management Ontology in Critical Infrastructures"
+    },
+    "iri" : "http://w3id.org/rioter/risk",
+    "version" : "1.0",
+    "author" : [ "Aitor Corchero (Eurecat Technology Centre)" ],
+    "description" : {
+      "undefined" : "Rioter Extension focused on managing risks in critical infrastructures"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://opensource.org/licenses/MIT",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aitor Corchero (Eurecat Technology Centre)",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Achim Mälzer (IWW)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Fabian Vollmer (IWW)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "George Karavokiros (NTUA)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Enric Bonet (CETAQUA)",
+        "type" : "label"
+      } ],
+      "imports" : [ {
+        "identifier" : "imports",
+        "language" : "undefined",
+        "value" : "http://topbraid.org/spin/owlrl-all",
+        "type" : "iri"
+      }, {
+        "identifier" : "imports",
+        "language" : "undefined",
+        "value" : "http://topbraid.org/spin/spinowl",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "01/07/2018",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "16/11/2018",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "risk",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Cyber-Physic Risk Management Ontology in Critical Infrastructures",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 30,
+    "objectPropertyCount" : 12,
+    "datatypePropertyCount" : 6,
+    "individualCount" : 3
+  },
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "26",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/rioter#NaturalArtifact",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NaturalArtifact"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10", "11" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#PhysicalRisk",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalRisk"
+    },
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#Indicator",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Indicator"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#Action",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "subClasses" : [ "41" ],
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Mitigation",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mitigation"
+    },
+    "intersection" : [ "29" ],
+    "attributes" : [ "intersection" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/rioter#Asset",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset"
+    },
+    "subClasses" : [ "32" ],
+    "intersection" : [ "29" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Problem",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Problem"
+    },
+    "id" : "50",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#DigitalSphere",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalSphere"
+    },
+    "subClasses" : [ "34", "51" ],
+    "id" : "36",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#Event",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Human",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Human"
+    },
+    "id" : "44",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Consequence",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Consequence"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Source",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Source"
+    },
+    "intersection" : [ "29" ],
+    "attributes" : [ "intersection" ],
+    "id" : "8",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#NaturalEvent",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NaturalEvent"
+    },
+    "id" : "1",
+    "superClasses" : [ "9", "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Software",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Software"
+    },
+    "id" : "51",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/rioter#Infrastructure",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Infrastructure"
+    },
+    "subClasses" : [ "63" ],
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "15",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "26",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Vulnerability",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vulnerability"
+    },
+    "id" : "30"
+  }, {
+    "iri" : "http://w3id.org/rioter#CriticalInfrastructure",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CriticalInfrastructure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Risk",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk"
+    },
+    "subClasses" : [ "57", "12" ],
+    "id" : "13",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Anomaly",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Anomaly"
+    },
+    "id" : "22",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Threat",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Threat"
+    },
+    "subClasses" : [ "8" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#CyberRisk",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CyberRisk"
+    },
+    "id" : "57",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#PhysicalSphere",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalSphere"
+    },
+    "subClasses" : [ "44", "9", "47" ],
+    "id" : "11",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://w3id.org/saref#Measurement",
+    "baseIri" : "http://w3id.org/saref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measurement"
+    },
+    "subClasses" : [ "19" ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/rioter#System",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "System"
+    },
+    "subClasses" : [ "27" ],
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#PhysicalObject",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalObject"
+    },
+    "subClasses" : [ "10", "11", "36" ],
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Action",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/rioter/risk#Reactive",
+      "baseIri" : "http://w3id.org/rioter/risk",
+      "labels" : {
+        "IRI-based" : "Reactive"
+      }
+    }, {
+      "iri" : "http://w3id.org/rioter/risk#Proactive",
+      "baseIri" : "http://w3id.org/rioter/risk",
+      "labels" : {
+        "IRI-based" : "Proactive"
+      }
+    }, {
+      "iri" : "http://w3id.org/rioter/risk#Predictive",
+      "baseIri" : "http://w3id.org/rioter/risk",
+      "labels" : {
+        "IRI-based" : "Predictive"
+      }
+    } ],
+    "id" : "41",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#SampledFeature",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SampledFeature"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#Event",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "22", "1", "50", "13" ],
+    "id" : "2",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#Device",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "34" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#consequenceDimension",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "consequenceDimension"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#source",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#risk",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "risk"
+    },
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/rioter#name",
+    "baseIri" : "http://w3id.org/rioter",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "16"
+  }, {
+    "range" : "2",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/rioter#domain",
+    "baseIri" : "http://w3id.org/rioter",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "domain"
+    },
+    "domain" : "17",
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#monitoredBy",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "monitoredBy"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#vulnerability",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "vulnerability"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "range" : "32",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "34",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "32",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/rioter#description",
+    "baseIri" : "http://w3id.org/rioter",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "range" : "32",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "11",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "11",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "11",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#LoAH",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "LoAH"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#identifier",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "13",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "59",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "36",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "36",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "47",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "52",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#LoAS",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "LoAS"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "range" : "9",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "29",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "40",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#event",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "event"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#mitigationAction",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "mitigationAction"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#affects",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "affects"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#consequence",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "consequence"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#LoC",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "LoC"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#associatedRisk",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "associatedRisk"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/rioter/risk#objective",
+    "baseIri" : "http://w3id.org/rioter/risk",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "objective"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "2",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  } ]
+}

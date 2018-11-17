@@ -1,0 +1,337 @@
+<http://w3id.org/rioter/risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/rioter/risk> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/rioter/risk> .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/elements/1.1/contributor> "Achim Mälzer (IWW)" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/elements/1.1/contributor> "Enric Bonet (CETAQUA)" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/elements/1.1/contributor> "Fabian Vollmer (IWW)" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/elements/1.1/contributor> "George Karavokiros (NTUA)" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/elements/1.1/creator> "Aitor Corchero (Eurecat Technology Centre)" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/elements/1.1/description> "Rioter Extension focused on managing risks in critical infrastructures" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/elements/1.1/source> "risk" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/elements/1.1/title> "Cyber-Physic Risk Management Ontology in Critical Infrastructures" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/terms/created> "01/07/2018" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/terms/license> "https://opensource.org/licenses/MIT" .
+<http://w3id.org/rioter/risk> <http://purl.org/dc/terms/modified> "16/11/2018" .
+<http://w3id.org/rioter/risk> <http://spinrdf.org/spin#imports> <http://topbraid.org/spin/owlrl-all> .
+<http://w3id.org/rioter/risk> <http://spinrdf.org/spin#imports> <http://topbraid.org/spin/spinowl> .
+<http://w3id.org/rioter/risk> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter#domain
+<http://w3id.org/rioter#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/rioter/risk#affects
+<http://w3id.org/rioter/risk#affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#affects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/risk#Risk> .
+<http://w3id.org/rioter/risk#affects> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Risk> .
+# 
+# http://w3id.org/rioter/risk#associatedRisk
+<http://w3id.org/rioter/risk#associatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/risk#Source> .
+<http://w3id.org/rioter/risk#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Risk> .
+# 
+# http://w3id.org/rioter/risk#consequence
+<http://w3id.org/rioter/risk#consequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#consequence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/risk#Risk> .
+<http://w3id.org/rioter/risk#consequence> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Consequence> .
+# 
+# http://w3id.org/rioter/risk#consequenceDimension
+<http://w3id.org/rioter/risk#consequenceDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#consequenceDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/risk#Mitigation> .
+<http://w3id.org/rioter/risk#consequenceDimension> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Consequence> .
+# 
+# http://w3id.org/rioter/risk#event
+<http://w3id.org/rioter/risk#event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Asset> .
+<http://w3id.org/rioter/risk#event> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Event> .
+# 
+# http://w3id.org/rioter/risk#mitigationAction
+<http://w3id.org/rioter/risk#mitigationAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#mitigationAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/risk#Risk> .
+<http://w3id.org/rioter/risk#mitigationAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Mitigation> .
+# 
+# http://w3id.org/rioter/risk#monitoredBy
+<http://w3id.org/rioter/risk#monitoredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#monitoredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Device> .
+# 
+# http://w3id.org/rioter/risk#objective
+<http://w3id.org/rioter/risk#objective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#objective> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/risk#Risk> .
+<http://w3id.org/rioter/risk#objective> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Indicator> .
+# 
+# http://w3id.org/rioter/risk#risk
+<http://w3id.org/rioter/risk#risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#risk> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Risk> .
+# 
+# http://w3id.org/rioter/risk#source
+<http://w3id.org/rioter/risk#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#source> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Source> .
+# 
+# http://w3id.org/rioter/risk#vulnerability
+<http://w3id.org/rioter/risk#vulnerability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/risk#vulnerability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Asset> .
+<http://w3id.org/rioter/risk#vulnerability> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/risk#Vulnerability> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter#description
+<http://w3id.org/rioter#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter#name
+<http://w3id.org/rioter#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter/risk#LoAH
+<http://w3id.org/rioter/risk#LoAH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter/risk#LoAH> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://w3id.org/rioter/risk#LoAS
+<http://w3id.org/rioter/risk#LoAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter/risk#LoAS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://w3id.org/rioter/risk#LoC
+<http://w3id.org/rioter/risk#LoC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter/risk#LoC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://w3id.org/rioter/risk#identifier
+<http://w3id.org/rioter/risk#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter/risk#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter#Action
+<http://w3id.org/rioter#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Asset
+<http://w3id.org/rioter#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Asset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/rioter#Asset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/rioter#Asset> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/rioter/risk#risk> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/rioter/risk#Risk> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/rioter#CriticalInfrastructure
+<http://w3id.org/rioter#CriticalInfrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#CriticalInfrastructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Infrastructure> .
+# 
+# http://w3id.org/rioter#Device
+<http://w3id.org/rioter#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#System> .
+# 
+# http://w3id.org/rioter#Event
+<http://w3id.org/rioter#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Indicator
+<http://w3id.org/rioter#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/saref#Measurement> .
+# 
+# http://w3id.org/rioter#Infrastructure
+<http://w3id.org/rioter#Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Infrastructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#PhysicalSphere> .
+# 
+# http://w3id.org/rioter#NaturalArtifact
+<http://w3id.org/rioter#NaturalArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#NaturalArtifact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#SampledFeature> .
+<http://w3id.org/rioter#NaturalArtifact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#PhysicalSphere> .
+# 
+# http://w3id.org/rioter#PhysicalObject
+<http://w3id.org/rioter#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Asset> .
+# 
+# http://w3id.org/rioter#SampledFeature
+<http://w3id.org/rioter#SampledFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#SampledFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#PhysicalObject> .
+# 
+# http://w3id.org/rioter#System
+<http://w3id.org/rioter#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#DigitalSphere> .
+# 
+# http://w3id.org/rioter/risk#Action
+<http://w3id.org/rioter/risk#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Action> .
+# 
+# http://w3id.org/rioter/risk#Anomaly
+<http://w3id.org/rioter/risk#Anomaly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Anomaly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#Event> .
+# 
+# http://w3id.org/rioter/risk#Consequence
+<http://w3id.org/rioter/risk#Consequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Consequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter/risk#CyberRisk
+<http://w3id.org/rioter/risk#CyberRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#CyberRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#Risk> .
+# 
+# http://w3id.org/rioter/risk#DigitalSphere
+<http://w3id.org/rioter/risk#DigitalSphere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#DigitalSphere> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#PhysicalObject> .
+# 
+# http://w3id.org/rioter/risk#Event
+<http://w3id.org/rioter/risk#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Event> .
+# 
+# http://w3id.org/rioter/risk#Human
+<http://w3id.org/rioter/risk#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#PhysicalSphere> .
+# 
+# http://w3id.org/rioter/risk#Mitigation
+<http://w3id.org/rioter/risk#Mitigation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Mitigation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://w3id.org/rioter/risk#Mitigation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/rioter#Asset> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/rioter/risk#consequenceDimension> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/rioter/risk#Consequence> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/rioter/risk#NaturalEvent
+<http://w3id.org/rioter/risk#NaturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#NaturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#NaturalArtifact> .
+<http://w3id.org/rioter/risk#NaturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#Event> .
+# 
+# http://w3id.org/rioter/risk#PhysicalRisk
+<http://w3id.org/rioter/risk#PhysicalRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#PhysicalRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#Risk> .
+# 
+# http://w3id.org/rioter/risk#PhysicalSphere
+<http://w3id.org/rioter/risk#PhysicalSphere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#PhysicalSphere> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#PhysicalObject> .
+# 
+# http://w3id.org/rioter/risk#Problem
+<http://w3id.org/rioter/risk#Problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Problem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#Event> .
+# 
+# http://w3id.org/rioter/risk#Risk
+<http://w3id.org/rioter/risk#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#Event> .
+# 
+# http://w3id.org/rioter/risk#Software
+<http://w3id.org/rioter/risk#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#DigitalSphere> .
+# 
+# http://w3id.org/rioter/risk#Source
+<http://w3id.org/rioter/risk#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/risk#Threat> .
+<http://w3id.org/rioter/risk#Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/rioter#Asset> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/rioter/risk#associatedRisk> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/rioter/risk#Risk> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/rioter/risk#Threat
+<http://w3id.org/rioter/risk#Threat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Threat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter/risk#Vulnerability
+<http://w3id.org/rioter/risk#Vulnerability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/risk#Vulnerability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/saref#Measurement
+<http://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter/risk#Predictive
+<http://w3id.org/rioter/risk#Predictive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter/risk#Predictive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter/risk#Action> .
+<http://w3id.org/rioter/risk#Predictive> <http://w3id.org/rioter#description> "Action derived from the computation of some system" .
+<http://w3id.org/rioter/risk#Predictive> <http://w3id.org/rioter#name> "Predictive Action" .
+# 
+# http://w3id.org/rioter/risk#Proactive
+<http://w3id.org/rioter/risk#Proactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter/risk#Proactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter/risk#Action> .
+<http://w3id.org/rioter/risk#Proactive> <http://w3id.org/rioter#description> "Action derived from some scheduled action." .
+<http://w3id.org/rioter/risk#Proactive> <http://w3id.org/rioter#name> "Proactive" .
+# 
+# http://w3id.org/rioter/risk#Reactive
+<http://w3id.org/rioter/risk#Reactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter/risk#Reactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter/risk#Action> .
+<http://w3id.org/rioter/risk#Reactive> <http://w3id.org/rioter#description> "Action produced once the threat has been materialised" .
+<http://w3id.org/rioter/risk#Reactive> <http://w3id.org/rioter#name> "Reactive Action" .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
